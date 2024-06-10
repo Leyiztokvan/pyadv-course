@@ -17,3 +17,8 @@ test = ["pytest", "pytest-cov"]
 via terminal:
 $ pip install -e ".[test]"
 
+
+
+# automate testing using github
+# there is a a file called ci.yaml in .github/workflows folder
+# check ci.yaml file, I added notes
