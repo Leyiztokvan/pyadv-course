@@ -21,7 +21,7 @@ description = "Demo package for course"
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "BSD-3-Clause" }
-authors = [{ name = "leyiztokvan", email = "first.last@example.com" }]
+authors = [{ name = "leyiztokvan", email = "leyiztokvan@gmail.com" }]
 # https://pypi.org/classifiers/
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -35,7 +35,6 @@ classifiers = [
     "Typing :: Typed",
 ]
 # add your package dependencies here
-# O§. add numpy module
 dependencies = ["numpy"]
 
 # https://peps.python.org/pep-0621/#dependencies-optional-dependencies
@@ -61,10 +60,10 @@ repository = "https://github.com/Leyiztokvan/pyadv-course"
 # https://peps.python.org/pep-0621/#entry-points
 # same as console_scripts entry point
 # [project.scripts]
-# pyadv-course-cli = "pyadv_course:main_cli"
+# pyadv-course-cli = "pyadv_course_leyiztokvan:main_cli"
 
 # [project.entry-points."some.group"]
-# tomatoes = "pyadv_course:main_tomatoes"
+# tomatoes = "pyadv_course_leyiztokvan:main_tomatoes"
 
 # https://docs.astral.sh/ruff
 [tool.ruff]
@@ -136,7 +135,7 @@ exclude_lines = [
 ]
 
 [tool.coverage.run]
-source = ["pyadv_course"]
+source = ["pyadv_course_leyiztokvan"]
 
 # https://github.com/mgedmin/check-manifest#configuration
 # add files that you want check-manifest to explicitly ignore here
