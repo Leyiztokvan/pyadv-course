@@ -34,3 +34,13 @@ $ pip install -e ".[test]"
 # publish the package to PyPi
 # create an test PyPi account and recovery codes and setup 2-factor authorations
 # link the github repository to PyPi on https://test.pypi.org/manage/account/publishing 
+
+
+# to publish packages on conda check: https://www.pyopensci.org/python-package-guide/tutorials/publish-conda-forge.html 
+# steps:
+# Step 1: Install grayskull
+# Step 2: Fork and clone the conda-forge staged-recipes repository
+# Step 3: Create your conda-forge recipe
+# Step 3b: 
+# Step 4:
+# and so on ...
