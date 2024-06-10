@@ -1,0 +1,11 @@
+# Do not edit - changes here will be overwritten by Copier
+_commit: v1
+_src_path: gh:pydev-guide/pyrepo-copier
+author_email: first.last@example.com
+author_name: leyiztokvan
+github_username: Leyiztokvan
+mode: tooling
+module_name: pyadv_course
+project_name: pyadv-course
+project_short_description: Demo package for course
+
