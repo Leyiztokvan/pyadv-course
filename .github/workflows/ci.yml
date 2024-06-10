@@ -81,11 +81,13 @@ jobs:
 
       - name: Coverage
         uses: codecov/codecov-action@v3
-
+# we have to first test the package before deploing it
   deploy:
     name: Deploy
     needs: test
-    if: success() && startsWith(github.ref, 'refs/tags/') && github.event_name != 'schedule'
+# here I disabled that the package is deployed on a schedule
+#"""if: success() && startsWith(github.ref, 'refs/tags/') && github.event_name != 'schedule'"""s
+    if: success() && startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
 
     permissions:
@@ -104,7 +106,9 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: "3.x"
-
+# with name: Build, we build the package
+# if we build the package manually with "python -m build", then there will be a new folder "dist" created with the executable package that can be downloaded
+# we can automate this process usin github by using the github action "with: repository-url: https/test.pypi.org/legacy", as it is in here
       - name: 👷 Build
         run: |
           python -m pip install build
@@ -112,6 +116,8 @@ jobs:
 
       - name: 🚢 Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
+        with: 
+          repository-url: https/test.pypi.org/legacy
 
       - uses: softprops/action-gh-release@v1
         with:
