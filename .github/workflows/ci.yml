@@ -80,7 +80,7 @@ jobs:
           update_existing: true
 
       - name: Coverage
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4
 # we have to first test the package before deploing it
   deploy:
     name: Deploy
