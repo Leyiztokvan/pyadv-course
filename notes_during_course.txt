@@ -1,0 +1,19 @@
+# install all dependencies specificed for the package in pyproject.toml file here
+"""
+# add your package dependencies here
+dependencies = ["numpy"]
+""" 
+via terminal:
+$ pip install -e . 
+
+# install all packages for testing specificed in the pyproject.toml file here
+
+# https://peps.python.org/pep-0621/#dependencies-optional-dependencies
+# "extras" (e.g. for `pip install .[test]`)
+[project.optional-dependencies]
+# add dependencies used for testing here
+test = ["pytest", "pytest-cov"]
+"""
+via terminal:
+$ pip install -e ".[test]"
+
