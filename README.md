@@ -7,3 +7,4 @@
 [![codecov](https://codecov.io/gh/Leyiztokvan/pyadv-course/branch/main/graph/badge.svg)](https://codecov.io/gh/Leyiztokvan/pyadv-course)
 
 Demo package for course
+# pyadv-course
