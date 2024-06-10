@@ -18,7 +18,19 @@ via terminal:
 $ pip install -e ".[test]"
 
 
-
 # automate testing using github
 # there is a a file called ci.yaml in .github/workflows folder
 # check ci.yaml file, I added notes
+
+
+# trying building the package manually in the terminal 
+# with name: Build, we build the package
+# if we build the package manually with "python -m build", then there will be a new folder "dist" created with the executable package that can be downloaded
+
+
+# automating the deployement and building of the package using github actions
+# we can automate this process usin github by using the github action "with: repository-url: https/test.pypi.org/legacy", as it is in here
+
+# publish the package to PyPi
+# create an test PyPi account and recovery codes and setup 2-factor authorations
+# link the github repository to PyPi on https://test.pypi.org/manage/account/publishing 
